@@ -1,0 +1,25 @@
+{
+  "name": "express-cookies-example",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "keywords": [
+    "express",
+    "cookies"
+  ],
+  "description": "A cookies usage example with express",
+  "author": "Dylan Luna <me@dilanluna.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "style-object-to-css-string": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

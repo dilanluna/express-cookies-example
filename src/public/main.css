@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+table {
+  border: 1px solid #123;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  width: 50%;
+}
+
+td {
+  border-top: 1px solid;
+}

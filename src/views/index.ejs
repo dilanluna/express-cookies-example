@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="charset" content="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Cookies Example</title>
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body style="<%= css %>">
+    <h1>Customize this site</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% styles.map((styles) => { %>
+          <tr>
+            <td>
+              <%= styles.property %>
+            </td>
+            <td>
+              <%= styles.value %>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+    <form method="post" action="/styles">
+      <input name="property" />
+      <input name="value" />
+      <button type="submit">send</button>
+    </form>
+  </body>
+</html>
